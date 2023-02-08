@@ -26,7 +26,7 @@ $(document).ready(function (){
     <?php
     if($this->session->flashdata('error'))
     { ?>
-    errormsg='<?php echo $this->session->flashdata('error');?>';
+    errormsg='<?php echo str_replace("\n", "", $this->session->flashdata('error'));?>';
     error.fire({
         icon: 'error',
         title: errormsg

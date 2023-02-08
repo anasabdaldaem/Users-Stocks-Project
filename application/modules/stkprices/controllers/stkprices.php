@@ -37,10 +37,8 @@ class stkprices extends MY_Controller{
             foreach ($stocks as $stock)
                 if($stock->id==$r->stock_id)
                     $row[] = $stock->name;
-            foreach ($currencies as $currency)
-                if($currency->id==$r->currency_id)
-                    $row[] = $currency->code;
             $row[] = $r->price;
+            $row[] = $r->extRate;
             $data[] = $row;
 
         }
@@ -71,9 +69,9 @@ class stkprices extends MY_Controller{
         else {
             $data = $this->input->post();
             $da = [
-                'currency_id' => $data['currency'] ,
                 'stock_id' => $data['stockname'],
-                'price' => $data['stockprice']
+                'price' => $data['stockprice'],
+                'extRate' => $data['extRate']
             ];
             if($this->stkprices_model->update($id,'stocks_prices', $da)) {
                 $this->session->set_flashdata('success', "stock Price info updated successfully");
@@ -160,9 +158,9 @@ class stkprices extends MY_Controller{
         else {
             $data = $this->input->post();
             $da = [
-                'currency_id' => $data['currency'] ,
                 'stock_id' => $data['stockname'],
-                'price' => $data['stockprice']
+                'price' => $data['stockprice'],
+                'extRate' => $data['extRate']
             ];
             if($this->stkprices_model->store('stocks_prices', $da)) {
                 $this->session->set_flashdata('success', "stocks has been added to user successfully");

@@ -17,6 +17,10 @@
                                     <label for="inputCode">Currency code</label>
                                     <input class="form-control" id="inputCode" name="inputCode"  required type="text" placeholder="Enter your currency code" />
                                 </div>
+                                <div class="form-group">
+                                    <label for="extRate">Exchange Rate</label>
+                                    <input class="form-control" id="extRate" name="extRate"  required type="number" step="0.00001" placeholder="Enter your USD Exchange Rate" />
+                                </div>
                             </div>
                             <div class="mt-4 mb-0">
                                 <div class="d-grid"><button type="submit" class="btn btn-primary btn-block" id="submit" name="submit">Create</button></div>
@@ -34,7 +38,7 @@
         $("#frm_update").validate({
             // in 'rules' user have to specify all the constraints for respective fields
             rules: {
-                inputName: {
+                inputName:{
                     required: true,
                     minlength: 3
                 },
@@ -42,17 +46,21 @@
                     required: true,
                     maxlength: 3,
                     minlength: 3
+                },extRate:{
+                    required: true
                 }
             },
             // in 'messages' user have to specify message as per rules
             messages: {
                 inputName: {
-                    required: " Please enter a stock name",
-                    minlength: " the stock name must be more than 2 characters"
-                }, inputCode: {
+                    required: " Please enter a currency name",
+                    minlength: " the currency name must be more than 2 characters"
+                },inputCode: {
                     required: " Please enter a currency code",
                     maxlength: " currency code must be 3 characters",
                     minlength: " currency code must be 3 characters"
+                },extRate: {
+                    required: " Please enter a Exchange Rate to USD"
                 }
             }
         });
@@ -81,7 +89,7 @@
         <?php
         if($this->session->flashdata('error'))
         { ?>
-        errormsg='<?php echo $this->session->flashdata('error');?>';
+        errormsg='<?php echo str_replace("\n", "", $this->session->flashdata('error'));?>';
         error.fire({
             icon: 'error',
             title: errormsg

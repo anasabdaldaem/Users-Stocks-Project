@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85bb3ae4-9486-4c92-9864-a669ea675402" name="Changes" comment="" />
+    <list default="true" id="85bb3ae4-9486-4c92-9864-a669ea675402" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/development/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/development/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/admin/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/admin/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/currencies/controllers/Currencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/currencies/controllers/Currencies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/currencies/views/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/currencies/views/create_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/currencies/views/edit_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/currencies/views/edit_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/currencies/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/currencies/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/currencies/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/currencies/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/customer/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/customer/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/login/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/login/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stkprices/controllers/stkprices.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stkprices/controllers/stkprices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stkprices/views/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stkprices/views/create_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stkprices/views/edit_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stkprices/views/edit_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stkprices/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stkprices/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stkprices/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stkprices/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stocks/views/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stocks/views/create_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stocks/views/edit_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stocks/views/edit_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/stocks/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/stocks/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/template/views/Sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/template/views/Sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/users/views/edit_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/users/views/edit_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/users/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/users/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/users/views/user_settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/users/views/user_settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/create_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/edit_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/edit_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +46,9 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,26 +93,27 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2L0Lq8mlUmtPMvqixD0elS903i3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Constants": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/wamp64/www/study/application/modules/customer/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Constants&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/study/application/modules/customer/views&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsDialog.application.dockerConsole&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\study\application\modules\customer\views" />
@@ -113,7 +148,8 @@
       <workItem from="1675239895779" duration="59210000" />
       <workItem from="1675536954317" duration="5400000" />
       <workItem from="1675609633200" duration="14182000" />
-      <workItem from="1675686345723" duration="6341000" />
+      <workItem from="1675686345723" duration="7548000" />
+      <workItem from="1675864521763" duration="10387000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,7 @@
             <th scope="col">Stock Name</th>
             <th scope="col">Stock Count</th>
             <th scope="col">Stock Price</th>
+            <th scope="col">Exchange Rate</th>
             <th scope="col">Action</th>
 
         </tr>

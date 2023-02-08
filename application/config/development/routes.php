@@ -60,6 +60,7 @@ $route['main/admin'] = 'admin/index';
 $route['main/customer'] = 'customer/index';
 $route['main/customer/balance'] = 'customer/balances';
 $route['get_balances'] = 'customer/get_balances';
+$route['get_userbalance/(:any)/(:any)'] = 'admin/get_userbalance/$1/$2';
 
 $route['login']='login/index';
 $route['login/login_submit']='login/login_submit_fun';
@@ -113,7 +114,7 @@ $route['admin/stockprice/delete/(:any)'] = "admin/stockprice_delete/$1";
 $route['admin/settings'] = "admin/settings";
 
 
-$route['admin/balances'] = "admin/balances";
+$route['main/admin/userbalance'] = "admin/userbalance";
 $route['admin/balances/new'] = "admin/create";
 $route['admin/stockprice/new'] = "admin/create_stockprice";
 

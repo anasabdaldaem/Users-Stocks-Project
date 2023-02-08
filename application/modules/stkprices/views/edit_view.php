@@ -22,23 +22,13 @@
                                             ?>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="currency">Currency Code</label>
-                                    <select class="form-select" name="currency" id="currency">
-                                        <?php foreach ($currencies as $currency)
-                                        {
-                                            if($data->currency_id==$currency->id)
-                                                echo '<option value="'. $currency->id .'" selected >'. $currency->code .'</option>';
-                                            else
-                                                echo '<option value="'. $currency->id .'" >'. $currency->code .'</option>';
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
 
                                 <div class="form-group">
                                     <label for="stockprice">Stock Price</label>
                                     <input class="form-control" id="stockprice" name="stockprice" value="<?php echo $data->price; ?>" required type="number" step="0.0001"/>
+                                </div><div class="form-group">
+                                    <label for="extRate">Stock Price</label>
+                                    <input class="form-control" id="extRate" name="extRate" value="<?php echo $data->extRate; ?>" required type="number" step="0.00001"/>
                                 </div>
                             </div>
                             <div class="mt-4 mb-0">
@@ -57,7 +47,7 @@
         $("#frm_update").validate({
             // in 'rules' user have to specify all the constraints for respective fields
             rules: {
-                currency:{
+                extRate:{
                     required: true
                 },
                 stockname:{
@@ -69,8 +59,8 @@
             },
             // in 'messages' user have to specify message as per rules
             messages: {
-                currency: {
-                    required: " Please choose a Currency Code"
+                extRate: {
+                    required: " Please choose a Exchange Rate to USD"
                 },stockname: {
                     required: " Please choose a stock name"
                 },
@@ -104,7 +94,7 @@
         <?php
         if($this->session->flashdata('error'))
         { ?>
-        errormsg='<?php echo $this->session->flashdata('error');?>';
+        errormsg='<?php echo str_replace("\n", "", $this->session->flashdata('error'));?>';
         error.fire({
             icon: 'error',
             title: errormsg

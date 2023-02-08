@@ -42,6 +42,9 @@
                                 <div class="form-group">
                                     <label for="stockprice">Stock Price</label>
                                     <input class="form-control" id="stockprice" name="stockprice" value="<?php echo $data->stock_price; ?>" required type="number" step="0.0001"/>
+                                </div><div class="form-group">
+                                    <label for="extRate">Stock Price</label>
+                                    <input class="form-control" id="extRate" name="extRate" value="<?php echo $data->extRate; ?>" required type="number" step="0.00001"/>
                                 </div>
                             </div>
                             <div class="mt-4 mb-0">
@@ -72,6 +75,9 @@
                 ,
                 stockprice:{
                     required: true
+                },
+                extRate:{
+                    required: true
                 }
             },
             // in 'messages' user have to specify message as per rules
@@ -83,9 +89,12 @@
                 }
                 ,stockcount: {
                     required: " Please enter the number of stocks"
-                }
+                },
                 stockprice: {
                     required: " Please enter the price of stocks"
+                },
+                extRate: {
+                    required: " Please enter the Exchange Rate of stocks"
                 }
             }
         });
@@ -114,7 +123,7 @@
         <?php
         if($this->session->flashdata('error'))
         { ?>
-        errormsg='<?php echo $this->session->flashdata('error');?>';
+        errormsg='<?php echo str_replace("\n", "", $this->session->flashdata('error'));?>';
         error.fire({
             icon: 'error',
             title: errormsg

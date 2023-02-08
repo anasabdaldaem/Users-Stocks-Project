@@ -32,6 +32,7 @@ class currencies extends MY_Controller{
             $row[] = $r->id;
             $row[] = $r->currency;
             $row[] = $r->code;
+            $row[] = $r->extRate;
             $data[] = $row;
 
         }
@@ -62,7 +63,8 @@ class currencies extends MY_Controller{
             $data = $this->input->post();
             $da = [
                 'currency' => $data['inputName'] ,
-                'code' => $data['inputCode']
+                'code' => $data['inputCode'],
+                'extRate'=>$data['extRate']
             ];
             if($this->Currencies_model->update($id,'currencies', $da)) {
                 $this->session->set_flashdata('success', "Currency info updated successfully");
@@ -145,7 +147,8 @@ class currencies extends MY_Controller{
             $data = $this->input->post();
             $da = [
                 'currency' => $data['inputName'] ,
-                'code' => $data['inputCode']
+                'code' => $data['inputCode'],
+                'extRate' => $data['extRate']
             ];
             if($this->Currencies_model->store('currencies', $da)) {
                 $this->session->set_flashdata('success', "Currency has been created successfully");

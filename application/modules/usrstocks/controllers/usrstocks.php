@@ -42,6 +42,7 @@ class usrstocks extends MY_Controller{
                     $row[] = $stock->name;
             $row[] = $r->stockcount;
             $row[] = $r->stock_price;
+            $row[] = $r->extRate;
             $data[] = $row;
 
         }
@@ -76,7 +77,8 @@ class usrstocks extends MY_Controller{
                 'user_id' => $data['username'] ,
                 'stock_id' => $data['stockname'],
                 'stockcount' => $data['stockcount'],
-                'stock_price' => $data['stockprice']
+                'stock_price' => $data['stockprice'],
+                'extRate' => $data['extRate']
             ];
             if($this->usrstocks_model->update($id,'users_stocks', $da)) {
                 $this->session->set_flashdata('success', "user balance updated successfully");
@@ -167,7 +169,8 @@ class usrstocks extends MY_Controller{
                 'user_id' => $data['username'] ,
                 'stock_id' => $data['stockname'],
                 'stockcount' => $data['stockcount'],
-                'stock_price' => $data['stockprice']
+                'stock_price' => $data['stockprice'],
+                'extRate' => $data['extRate']
             ];
             if($this->usrstocks_model->store('users_stocks', $da)) {
                 $this->session->set_flashdata('success', "stocks has been added to user successfully");

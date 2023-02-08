@@ -26,7 +26,7 @@ $(document).ready(function (){
     <?php
     if($this->session->flashdata('error'))
     { ?>
-    errormsg='<?php echo $this->session->flashdata('error');?>';
+    errormsg='<?php echo str_replace("\n", "", $this->session->flashdata('error'));?>';
     error.fire({
         icon: 'error',
         title: errormsg
@@ -51,6 +51,7 @@ $(document).ready(function (){
         url :"<?php echo base_url('get_usrstocks'); ?>",
         type :'GET'
     },"columns": [
+          null,
           null,
           null,
           null,

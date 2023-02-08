@@ -3,6 +3,7 @@
     $('#usrstocks-list').DataTable({
         "lengthChange": false,
         "paging": true,
+        "pageLength": 10,
         "searching": false,
         "processing": false,
         "ordering": true,

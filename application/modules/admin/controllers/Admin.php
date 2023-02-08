@@ -27,6 +27,7 @@ class Admin extends MY_Controller{
 
     public function get_userbalance($user_id,$stock_id)
     {
+        $this->checksession();
         $draw=intval($this->input->get("draw"));
         $start=intval($this->input->get("start"));
         $length=intval($this->input->get("length"));
@@ -77,7 +78,7 @@ class Admin extends MY_Controller{
     public function index()
     {
 
-        if($this->checksession()) {
+        if(!$this->checksession()) {
             $data['data'] = $this->session->userdata('data');
         }
         else
@@ -87,7 +88,9 @@ class Admin extends MY_Controller{
         }
         $this->load->view('template/Header');
         $this->load->view('template/Sidebar');
+        $this->load->view('header');
         $this->load->view('mainadmin_view',$data);
+        $this->load->view('footer');
         $this->load->view('template/Footer');
     }
     public function checksession(): bool

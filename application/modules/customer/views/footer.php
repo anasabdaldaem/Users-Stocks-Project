@@ -1,23 +1,53 @@
 </div>
 <script>
+
     $('#usrstocks-list').DataTable({
+        "destroy": true,
         "lengthChange": false,
         "paging": true,
-        "pageLength": 10,
         "searching": false,
-        "processing": false,
-        "ordering": true,
+        "processing": true,
+        "ordering": false,
         "serverSide": true,
         "ajax": {
-            url :"<?php echo base_url('get_balances'); ?>",
-            type :'GET'
-        },"columns": [
-            null,
-            null,
-            null,
-            null,
-            null,
+            url :"<?php echo base_url('get_customerbalance'); ?>",
+            type :'GET',
 
+        },"columns": [
+            {
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            },{
+                "data":undefined,
+                "defaultContent": "N/A"
+            }
         ],
         "fnCreatedRow": function( nRow, aData, iDataIndex ) {
             $(nRow).attr('id', aData[0]);

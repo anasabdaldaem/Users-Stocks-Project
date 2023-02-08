@@ -58,9 +58,10 @@ $route['translate_uri_dashes'] = FALSE;
 $route['main'] = 'main/index';
 $route['main/admin'] = 'admin/index';
 $route['main/customer'] = 'customer/index';
-$route['main/customer/balance'] = 'customer/balances';
+$route['main/customer/customerbalance'] = 'customer/customerbalance';
 $route['get_balances'] = 'customer/get_balances';
 $route['get_userbalance/(:any)/(:any)'] = 'admin/get_userbalance/$1/$2';
+$route['get_customerbalance'] = 'customer/get_customerbalance';
 
 $route['login']='login/index';
 $route['login/login_submit']='login/login_submit_fun';

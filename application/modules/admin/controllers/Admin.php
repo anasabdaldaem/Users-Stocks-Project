@@ -27,7 +27,11 @@ class Admin extends MY_Controller{
 
     public function get_userbalance($user_id,$stock_id)
     {
+<<<<<<< HEAD
         $this->checksession();
+=======
+        $this->checksession()
+>>>>>>> a75149a179cc53bb1b0a11dea6adc704833097b0
         $draw=intval($this->input->get("draw"));
         $start=intval($this->input->get("start"));
         $length=intval($this->input->get("length"));

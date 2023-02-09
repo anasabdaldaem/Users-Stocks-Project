@@ -1,7 +1,7 @@
 <h2 class="text-center mt-5 mb-3">Users Balances Table</h2>
 <div class="card">
     <div class="card-header">
-        <a href="<?php echo base_url('main/admin/newsell') ?>" data-toggle="modal" data-target="#add-user" class="float-right btn btn-primary btn-sm" style="margin: 4px;"><i class="fa fa-plus"></i>Sell Stocks</a>
+        <a href="<?php echo base_url('main/customer/newsell') ?>" data-toggle="modal" data-target="#add-user" class="float-right btn btn-primary btn-sm" style="margin: 4px;"><i class="fa fa-plus"></i>Sell Stocks</a>
     </div>
     <div class="card-body">
 

@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85bb3ae4-9486-4c92-9864-a669ea675402" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application/modules/admin/views/profits.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/admin/views/sell_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/modules/customer/views/sell_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/development/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" afterDir="false" />
@@ -130,7 +133,7 @@
       <workItem from="1675609633200" duration="14182000" />
       <workItem from="1675686345723" duration="7548000" />
       <workItem from="1675864521763" duration="14725000" />
-      <workItem from="1675945901519" duration="23008000" />
+      <workItem from="1675945901519" duration="23752000" />
     </task>
     <servers />
   </component>
@@ -300,6 +303,16 @@
           <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
           <line>198</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/customer/controllers/Customer.php</url>
+          <line>177</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/customer/controllers/Customer.php</url>
+          <line>149</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php</url>

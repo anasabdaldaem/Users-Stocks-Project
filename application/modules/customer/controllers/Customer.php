@@ -103,7 +103,7 @@ class Customer extends MY_Controller{
     public function newsell()
     {
         $this->checksession();
-        $data['stocks']= $this->admin_model->get_all('stocks');
+        $data['stocks']= $this->customer_model->get_all('stocks');
         $this->load->view('template/Header');
         $this->load->view('template/Sidebar');
         $this->load->view('header');
@@ -131,7 +131,7 @@ class Customer extends MY_Controller{
         }
         else {
             $data = $this->input->post();
-            $balances=$this->admin_model->get_all('users_stocks');
+            $balances=$this->customer_model->get_all('users_stocks');
             $totalstocks=0;
             $stockcount=$data['stockcount'];
             foreach ($balances as $balance)
@@ -160,7 +160,7 @@ class Customer extends MY_Controller{
                                 ];
                                 $totalstocks -= $balance->stockcount;
                                 $stockcount -= $balance->stockcount;
-                                $this->admin_model->update($balance->id, 'users_stocks', $updated_balance);
+                                $this->customer_model->update($balance->id, 'users_stocks', $updated_balance);
 
                             } else {
                                 $updated_balance = [
@@ -172,7 +172,7 @@ class Customer extends MY_Controller{
                                 ];
                                 $totalstocks -= $stockcount;
                                 $stockcount -= $stockcount;
-                                $this->admin_model->update($balance->id, 'users_stocks', $updated_balance);
+                                $this->customer_model->update($balance->id, 'users_stocks', $updated_balance);
                             }
                         }
                     } else {
@@ -190,7 +190,7 @@ class Customer extends MY_Controller{
                         'stock_price' => $data['stockprice'],
                         'extRate' => $data['extRate']
                     ];
-                    if ($this->admin_model->store('stocks_sell', $da)) {
+                    if ($this->customer_model->store('stocks_sell', $da)) {
                         $this->session->set_flashdata('success', "stocks has been added to user successfully");
                         redirect('main/customer/customerbalance');
 

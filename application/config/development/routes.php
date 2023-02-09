@@ -116,7 +116,12 @@ $route['admin/settings'] = "admin/settings";
 
 
 $route['main/admin/userbalance'] = "admin/userbalance";
-$route['admin/balances/new'] = "admin/create";
+$route['main/admin/newsell'] = "admin/newsell";
+$route['main/admin/createsell'] = "admin/createsell";
+$route['main/customer/newsell'] = "customer/newsell";
+$route['main/customer/createsell'] = "customer/createsell";
 $route['admin/stockprice/new'] = "admin/create_stockprice";
+$route['main/admin/profits'] = "admin/profits";
+$route['get_userprofit/(:any)/(:any)'] = "admin/get_userprofit/$1/$2";
 
 

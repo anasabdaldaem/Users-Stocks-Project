@@ -5,18 +5,8 @@
                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Add stocks to user</h3></div>
                     <div class="card-body">
-                        <form method="post" action="<?php echo site_url('main/admin/usrstocks/create')?>" name="frm_create" id="frm_create">
+                        <form method="post" action="<?php echo site_url('main/customer/createsell')?>" name="frm_create" id="frm_create">
                             <div class="row mb-3">
-                                <div class="form-group">
-                                    <label for="username">User Name</label>
-                                    <select class="form-select" name="username" id="username">
-                                        <?php foreach ($users as $user)
-                                        {
-                                                echo '<option value="'. $user->id .'" >'. $user->name .'</option>';
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
                                 <div class="form-group">
                                     <label for="stockname">Stock Name</label>
                                     <select class="form-select" name="stockname" id="stockname">
@@ -56,9 +46,6 @@
         $("#frm_update").validate({
             // in 'rules' user have to specify all the constraints for respective fields
             rules: {
-                username:{
-                    required: true
-                },
                 stockname:{
                     required: true
                 },
@@ -75,9 +62,7 @@
             },
             // in 'messages' user have to specify message as per rules
             messages: {
-                username: {
-                    required: " Please choose a User name"
-                },stockname: {
+                stockname: {
                     required: " Please choose a stock name"
                 }
                 ,stockcount: {

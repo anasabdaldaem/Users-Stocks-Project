@@ -80,6 +80,23 @@ class usrstocks extends MY_Controller{
                 'stock_price' => $data['stockprice'],
                 'extRate' => $data['extRate']
             ];
+            $da1 = [
+                'operation' => 1,
+                'user_id' => $data['username'] ,
+                'stock_id' => $data['stockname'],
+                'stockcount' => $data['stockcount'],
+                'stock_price' => $data['stockprice'],
+                'extRate' => $data['extRate']
+            ];
+            $query=$this->usrstocks_model->get($id,'users_stocks');
+            $operation=$this->usrstocks_model->get_all('stocks_sell')->result();
+            foreach ($operation as $item)
+            {
+                if(($item->date_of_create==$query->date_of_create)&&($item->user_id==$query->user_id)&&($item->stock_id==$query->stock_id)&&($item->stockcount==$query->stockcount)&&($item->stock_price==$query->stock_price)&&($item->extRate==$query->extRate))
+                {
+                    $this->usrstocks_model->update($item->id,'stocks_sell', $da1);
+                }
+            }
             if($this->usrstocks_model->update($id,'users_stocks', $da)) {
                 $this->session->set_flashdata('success', "user balance updated successfully");
                 redirect('main/admin/usrstocks');
@@ -123,6 +140,15 @@ class usrstocks extends MY_Controller{
     public function delete($id)
     {
         $this->checksession();
+        $query=$this->usrstocks_model->get($id,'users_stocks');
+        $operation=$this->usrstocks_model->get_all('stocks_sell')->result();
+        foreach ($operation as $item)
+        {
+            if(($item->date_of_create==$query->date_of_create)&&($item->user_id==$query->user_id)&&($item->stock_id==$query->stock_id)&&($item->stockcount==$query->stockcount)&&($item->stock_price==$query->stock_price)&&($item->extRate==$query->extRate))
+            {
+                $this->usrstocks_model->delete($item->id,'stocks_sell');
+            }
+        }
         if($this->usrstocks_model->delete($id,'users_stocks')) {
             $this->session->set_flashdata('success', "balance has been deleted successfully");
             redirect('main/admin/usrstocks','refresh');
@@ -172,6 +198,15 @@ class usrstocks extends MY_Controller{
                 'stock_price' => $data['stockprice'],
                 'extRate' => $data['extRate']
             ];
+            $da1 = [
+                'operation' => 1,
+                'user_id' => $data['username'] ,
+                'stock_id' => $data['stockname'],
+                'stockcount' => $data['stockcount'],
+                'stock_price' => $data['stockprice'],
+                'extRate' => $data['extRate']
+            ];
+            $this->usrstocks_model->store('stocks_sell', $da1);
             if($this->usrstocks_model->store('users_stocks', $da)) {
                 $this->session->set_flashdata('success', "stocks has been added to user successfully");
                 redirect('main/admin/usrstocks');

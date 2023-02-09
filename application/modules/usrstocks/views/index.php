@@ -3,6 +3,9 @@
     <div class="card-header">
         <a href="<?php echo base_url('main/admin/usrstocks/new') ?>" data-toggle="modal" data-target="#add-user" class="float-right btn btn-primary btn-sm" style="margin: 4px;"><i class="fa fa-plus"></i> Add Stocks to User</a>
     </div>
+    <div class="card-header">
+        <a href="<?php echo base_url('main/admin/newsell') ?>" data-toggle="modal" data-target="#add-user" class="float-right btn btn-primary btn-sm" style="margin: 4px;"><i class="fa fa-plus"></i> Sell Stocks from User</a>
+    </div>
     <div class="card-body">
 
         <table id="usrstocks-list" class="table table-bordered table-hover small">

@@ -5,7 +5,7 @@
                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Add stocks to user</h3></div>
                     <div class="card-body">
-                        <form method="post" action="<?php echo site_url('main/admin/usrstocks/create')?>" name="frm_create" id="frm_create">
+                        <form method="post" action="<?php echo site_url('main/admin/createsell')?>" name="frm_create" id="frm_create">
                             <div class="row mb-3">
                                 <div class="form-group">
                                     <label for="username">User Name</label>

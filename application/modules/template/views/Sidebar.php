@@ -22,6 +22,8 @@
                                 $link4 = base_url('main/admin/currencies');
                                 $link5 = base_url('main/admin/stkprices');
                                 $link6 = base_url('main/admin/userbalance');
+                                $link7 = base_url('main/admin/newsell');
+                                $link8 = base_url('main/admin/profits');
                                 $html = '<div class="sb-sidenav-menu-heading">Admin</div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                         <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -36,6 +38,8 @@
                             <a class="nav-link" href="' . $link3 . '">Stocks</a>
                             <a class="nav-link" href="' . $link4 . '">Currencies</a>
                             <a class="nav-link" href="' . $link5 . '">Stocks Prices</a>
+                            <a class="nav-link" href="' . $link7 . '">Sell Stocks</a>
+                            <a class="nav-link" href="' . $link8 . '">User Profits</a>
 
                         </nav>
                     </div>';

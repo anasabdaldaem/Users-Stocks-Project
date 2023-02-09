@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="85bb3ae4-9486-4c92-9864-a669ea675402" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/development/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/development/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/controllers/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/admin/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/admin/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/customer/controllers/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/customer/controllers/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/customer/views/customerbalances.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/customer/views/customerbalances.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/template/views/Sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/template/views/Sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/create_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/create_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/modules/usrstocks/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/modules/usrstocks/views/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,34 +78,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Constants&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/study/application/modules/customer/views&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsDialog.application.dockerConsole&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Constants": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/wamp64/www/study/application/modules/admin/views",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\study\application\modules\admin\views" />
       <recent name="C:\wamp64\www\study\application\modules\customer\views" />
       <recent name="C:\wamp64\www\study\application\modules" />
       <recent name="C:\wamp64\www\study\application\modules\currencies" />
       <recent name="C:\wamp64\www\study\application\modules\stocks" />
-      <recent name="C:\wamp64\www\study\application\libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\study\application\modules\admin\views" />
       <recent name="C:\wamp64\www\study\application\modules\customer\views" />
       <recent name="C:\wamp64\www\study\application\modules\agent\views" />
-      <recent name="C:\wamp64\www\study\application\modules\admin\views" />
       <recent name="C:\wamp64\www\study\application\modules\admin\controllers" />
     </key>
   </component>
@@ -120,12 +129,24 @@
       <workItem from="1675536954317" duration="5400000" />
       <workItem from="1675609633200" duration="14182000" />
       <workItem from="1675686345723" duration="7548000" />
-      <workItem from="1675864521763" duration="13816000" />
+      <workItem from="1675864521763" duration="14725000" />
+      <workItem from="1675945901519" duration="23008000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -239,6 +260,46 @@
           <url>file://$PROJECT_DIR$/application/modules/users/controllers/Users.php</url>
           <line>244</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>45</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php</url>
+          <line>92</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>242</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>245</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>247</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>216</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/modules/admin/controllers/Admin.php</url>
+          <line>198</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/application/modules/usrstocks/controllers/usrstocks.php</url>

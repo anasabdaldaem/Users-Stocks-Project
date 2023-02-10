@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'login',
-	'password' => '',
-	'database' => 'login',
+	'hostname' => '148.251.154.253',
+	'username' => 'maya_testproj',
+	'password' => '-=VpzEVA#6Cjswo7?M',
+	'database' => 'maya_testproj',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
